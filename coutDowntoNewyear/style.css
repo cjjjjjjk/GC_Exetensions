@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root{
+    --bgc-color : #6554AF;
+    --box-color : #9575DE;
+    --text-color : #F0F0F0;
+}
+body
+{
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Lilita One', cursive;;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(139, 32, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 350px;
+
+}   
+
+#popUp
+{
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 350px;
+
+    align-items: center;
+    padding-top: 4rem;
+    background: linear-gradient( 0deg,var(--bgc-color), var(--box-color));
+}
+
+#coutdown
+{
+    position: absolute;
+    top: 9.9rem;
+    left: 0;
+    right: 0;
+    background-color: var(--box-color);
+
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#year
+{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}

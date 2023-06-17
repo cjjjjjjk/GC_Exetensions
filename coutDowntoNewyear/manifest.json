@@ -1,0 +1,15 @@
+{
+    "id": "1.00",
+    "manifest_version": 3,
+    "name" : "Days Left !",
+    "version": "1.0",
+    "description": "Show the days left to the next year!",
+    "author": "Ho Van Hai ",
+    "icon": {
+        "16": ""
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Number of days left to new year !"
+    }
+}   
