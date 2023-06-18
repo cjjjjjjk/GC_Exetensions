@@ -12,6 +12,11 @@ var date = new Date();
 
 upDate()
 
+// Function days Handler
+function isLeapyear(year)
+{
+    return (year%4 === 0) ? true : false;
+}    
 function daysofMon(mon, year)
     {
         switch(mon)
@@ -30,10 +35,11 @@ function daysofMon(mon, year)
                 return (isLeapyear(year)) ? 29 : 28;
         }
     }
+
+
 function upDate()
 {
     date = new Date()
-    isLeapyear = (year) =>  (year % 4 == 0)? true : false;  
     getDays = (day, mon, year) =>
     {
         let outPut = 0;
