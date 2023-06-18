@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
 :root{
     --bgc-color : #6554AF;
     --box-color : #9575DE;
     --text-color : #F0F0F0;
+    --bgc-calender-color1: #46458C;
+    --bgc-calender-color2: #110d8d;
+    --text-calender-color: #F4D3D3;
 }
 body
 {
@@ -15,33 +19,32 @@ body
     height: 100vh;
     width: 100vw;
 
-    background-color: rgb(139, 32, 175);
+    background-color: rgba(139, 32, 175, 100);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: auto;
     width: 350px;
 
 }   
 
 #popUp
 {
-    border-radius: 6px;
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 360px;
     width: 350px;
 
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
     background: linear-gradient( 0deg,var(--bgc-color), var(--box-color));
 }
 
 #coutdown
 {
     position: absolute;
-    top: 9.9rem;
+    top: 8.9rem;
     left: 0;
     right: 0;
     background-color: var(--box-color);
@@ -65,4 +68,64 @@ body
 {
     margin-top: 1rem;
     font-size: 1.5rem;
+}
+
+#footer 
+{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 0;
+    color: rgb(223, 214, 214);
+    font-size: 0.6rem;
+    font-style: italic;
+    padding-bottom: 0,5rem;
+}
+
+#calendar
+{
+    color: var(--text-calender-color);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    /* height: 30rem; */
+    position: absolute;
+    bottom: 0;
+    top : 13.5rem;
+    left: 0;
+    right: 0;
+    background: linear-gradient(var(--bgc-color), var(--bgc-calender-color2));
+}
+#calendar-heading
+{
+    margin-top: 0.4rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#week-header-bar
+{
+    padding-left:  0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.week-bar 
+{
+    padding-left:  0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.date
+{
+    display: block;
+    padding: 0.25rem 0.5rem 0 0.5rem;
+}
+
+.active
+{
+    background-color: #fff;
+    color: var(--bgc-calender-color2);
+    font-weight: bold;
 }
