@@ -12,10 +12,7 @@ var date = new Date();
 
 upDate()
 
-
-function upDate()
-{
-    daysofMon = (mon, year) =>
+function daysofMon(mon, year)
     {
         switch(mon)
         {
@@ -33,6 +30,8 @@ function upDate()
                 return (isLeapyear(year)) ? 29 : 28;
         }
     }
+function upDate()
+{
     date = new Date()
     isLeapyear = (year) =>  (year % 4 == 0)? true : false;  
     getDays = (day, mon, year) =>
@@ -111,26 +110,6 @@ const Months =
     "November",
     "December"
 ]
-
-daysofMon = (mon, year) =>
-    {
-        switch(mon)
-        {
-            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-                {
-                    return 31;
-                    break;
-                }
-            case 4: case 6: case 9: case 11:
-                {
-                    return 30;
-                    break;
-                }
-            case 2:
-                return (isLeapyear(year)) ? 29 : 28;
-        }
-    }
-
 var dayofWeek = weekDays[weekDay]
 var monthofYear = Months[month]
 
