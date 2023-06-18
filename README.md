@@ -2,4 +2,7 @@
 i'm learning to create google chrome Extensions  🤔
 
 1.coutDowntoNewYear and Month calender
-<img width="271" alt="image" src="https://github.com/cjjjjjjk/GC_Exetensions/assets/119516491/cb8a5654-f1a0-40bf-98ca-e70c1ff3d4f3">
+<br>
+<img width="426" alt="image" src="https://github.com/cjjjjjjk/GC_Exetensions/assets/119516491/2df783f4-a210-41ed-9c71-44d8f8f2ecb3">
+
+
