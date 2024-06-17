@@ -1,5 +1,3 @@
-// const window = document.querySelector('#popUp')
-
 const nextYearElement = document.querySelector("#year");
 const daysEl = document.querySelector('#days')
 const hoursEl = document.querySelector('#hours')
@@ -8,11 +6,7 @@ const secondsEl = document.querySelector('#secs')
 
 
 var date = new Date(); 
-// date: Sat Jun 17 2023 12:19:01 GMT+0700 (Indochina Time)
-
 upDate()
-
-// Function days Handler
 function isLeapyear(year)
 {
     return (year%4 === 0) ? true : false;
@@ -36,7 +30,6 @@ function daysofMon(mon, year)
         }
     }
 
-
 function upDate()
 {
     date = new Date()
@@ -47,14 +40,9 @@ function upDate()
         return outPut+day
     }
 
-
     var nextYear = date.getFullYear() + 1
     nextYearElement.textContent = nextYear.toString()
 
-    
-
-    var newYear = new Date(`${nextYear.toString()}-1-1`)
-    // newYear: Mon Jan 01 2024 00:00:00 GMT+0700 (Indochina Time)
     let d = getDays(date.getDate(), date.getMonth() +1, date.getFullYear())
 
     let hh = date.getHours()
@@ -78,15 +66,10 @@ function upDate()
 
 }
 
-
-
-// Month calender
 const dateEl = document.querySelector('#date-String')
 const dateTableEl = document.querySelector('#date-table')
 const weekEls = document.querySelectorAll(".week-bar")
 
-console.log(date)
-// Sun Jun 18 2023 08:48:03 GMT+0700 (Indochina Time)
 var weekDay = date.getDay()
 const weekDays =
 [
@@ -98,7 +81,6 @@ const weekDays =
     "Fri",
     "Sat"
 ]
-
 
 var month = date.getMonth()
 const Months = 
@@ -120,15 +102,9 @@ var dayofWeek = weekDays[weekDay]
 var monthofYear = Months[month]
 
 var dateString = `- ${dayofWeek} ${date.getDate()} ${monthofYear} ${date.getFullYear()} -`
-// console.log(dateString)
 dateEl.textContent = dateString
-
-// Get the first day of this month
 var firstDay = new Date(date.getFullYear(),date.getMonth(),1);
-// console.log(firstDay)
-var firstDayofWeek = firstDay.getDay() // 0
-// console.log(firstDayofWeek)
-
+var firstDayofWeek = firstDay.getDay()
 
 var daysNumeber = 1;
 weekEls.forEach((week, index)=>
@@ -151,8 +127,7 @@ weekEls.forEach((week, index)=>
                 daysNumeber++;
                 dayofweekEl.textContent = daysNumeber.toString()
             } 
-        }
-        )
+        })
     }
     if(index>0 )
     {
@@ -165,9 +140,4 @@ weekEls.forEach((week, index)=>
             dayofWeek.textContent = daysNumeber.toString()}
         })
     }
-
 })
-
-
-
-// console.log(daysofMon(date.getMonth() , date.getFullYear()))
