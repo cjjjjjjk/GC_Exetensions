@@ -71,32 +71,32 @@ const weekEls = document.querySelectorAll(".week-bar")
 
 var weekDay = date.getDay()
 const weekDays =
-[
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri",
-    "Sat"
-]
+                [
+                    "Sun",
+                    "Mon",
+                    "Tue",
+                    "Wed",
+                    "Thu",
+                    "Fri",
+                    "Sat"
+                ]
 
 var month = date.getMonth()
 const Months = 
-[
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
+            [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ]
 var dayofWeek = weekDays[weekDay]
 var monthofYear = Months[month]
 
