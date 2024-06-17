@@ -65,7 +65,6 @@ function upDate()
     secondsEl.textContent = coutdownSec.toString()
 
 }
-
 const dateEl = document.querySelector('#date-String')
 const dateTableEl = document.querySelector('#date-table')
 const weekEls = document.querySelectorAll(".week-bar")
